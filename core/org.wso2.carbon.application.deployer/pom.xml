@@ -33,7 +33,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.platform</groupId>
+            <groupId>org.wso2.eclipse.platform</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
         </dependency>
         <dependency>
@@ -86,6 +86,24 @@
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.eclipse.equinox</groupId>
+            <artifactId>org.eclipse.equinox.p2.metadata</artifactId>
+            <version>${version.equinox.p2.metadata}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.eclipse.equinox</groupId>
+            <artifactId>org.eclipse.equinox.p2.engine</artifactId>
+            <version>${version.equinox.p2.engine}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.eclipse.core</groupId>
+            <artifactId>org.eclipse.core.runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.eclipse.equinox</groupId>
+            <artifactId>org.eclipse.equinox.common</artifactId>
         </dependency>
     </dependencies>
 

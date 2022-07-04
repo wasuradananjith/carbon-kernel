@@ -34,7 +34,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.platform</groupId>
+            <groupId>org.wso2.eclipse.platform</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
         </dependency>
         <dependency>
@@ -63,14 +63,10 @@
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
-            <artifactId>org.eclipse.equinox.ds</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.launcher</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.equinox</groupId>
+            <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.app</artifactId>
         </dependency>
         <dependency>
@@ -86,19 +82,19 @@
             <artifactId>org.eclipse.equinox.frameworkadmin.equinox</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.platform</groupId>
+            <groupId>org.wso2.eclipse.platform</groupId>
             <artifactId>org.eclipse.equinox.console</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.felix</groupId>
+            <groupId>org.wso2.apache.felix</groupId>
             <artifactId>org.apache.felix.gogo.command</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.felix</groupId>
+            <groupId>org.wso2.apache.felix</groupId>
             <artifactId>org.apache.felix.gogo.shell</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.felix</groupId>
+            <groupId>org.wso2.apache.felix</groupId>
             <artifactId>org.apache.felix.gogo.runtime</artifactId>
         </dependency>
         <dependency>
@@ -162,7 +158,7 @@
             <artifactId>org.eclipse.equinox.p2.repository</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.equinox</groupId>
+            <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.p2.touchpoint.eclipse</artifactId>
         </dependency>
         <dependency>
@@ -178,12 +174,16 @@
             <artifactId>org.eclipse.equinox.p2.updatesite</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.equinox</groupId>
+            <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.p2.publisher.eclipse</artifactId>
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.preferences</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.service.prefs</artifactId>
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
@@ -198,36 +198,40 @@
             <artifactId>org.eclipse.equinox.simpleconfigurator.manipulator</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.equinox</groupId>
+            <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.p2.publisher</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.core</groupId>
+            <groupId>org.wso2.eclipse.core</groupId>
             <artifactId>org.eclipse.core.contenttype</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.core</groupId>
+            <groupId>org.wso2.eclipse.core</groupId>
             <artifactId>org.eclipse.core.expressions</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.core</groupId>
+            <groupId>org.wso2.eclipse.core</groupId>
             <artifactId>org.eclipse.core.jobs</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.core</groupId>
+            <groupId>org.wso2.eclipse.core</groupId>
             <artifactId>org.eclipse.core.runtime</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse</groupId>
+            <groupId>org.wso2.eclipse</groupId>
             <artifactId>org.sat4j.core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse</groupId>
+            <groupId>org.wso2.eclipse</groupId>
             <artifactId>org.sat4j.pb</artifactId>
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
     </dependencies>
 
@@ -255,31 +259,33 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.common</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.simpleconfigurator</bundleDef>
                                 <bundleDef>org.wso2.carbon:org.wso2.carbon.osgi.security</bundleDef>
-                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.ds</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.util</bundleDef>
                                 <bundleDef>org.wso2.eclipse.osgi:org.eclipse.osgi.services</bundleDef>
-                                <bundleDef>org.eclipse.platform:org.eclipse.osgi</bundleDef>
-                                <bundleDef>org.eclipse.equinox:org.eclipse.equinox.app</bundleDef>
+                                <bundleDef>org.wso2.eclipse.platform:org.eclipse.osgi</bundleDef>
+                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.app</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.concurrent</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.frameworkadmin</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.frameworkadmin.equinox</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.preferences</bundleDef>
+                                <bundleDef>org.osgi:org.osgi.service.prefs</bundleDef>
+                                <bundleDef>org.osgi:org.osgi.util.promise</bundleDef>
+                                <bundleDef>org.osgi:org.osgi.util.function</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.registry</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.security</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.simpleconfigurator.manipulator
                                 </bundleDef>
                                 <!--<bundleDef>org.apache.felix:org.apache.felix.scr</bundleDef>-->
-                                <bundleDef>org.eclipse.platform:org.eclipse.equinox.console</bundleDef>
-                                <bundleDef>org.apache.felix:org.apache.felix.gogo.command</bundleDef>
-                                <bundleDef>org.apache.felix:org.apache.felix.gogo.runtime</bundleDef>
-                                <bundleDef>org.apache.felix:org.apache.felix.gogo.shell</bundleDef>
-                                <bundleDef>org.eclipse.core:org.eclipse.core.contenttype</bundleDef>
-                                <bundleDef>org.eclipse.core:org.eclipse.core.expressions</bundleDef>
-                                <bundleDef>org.eclipse.core:org.eclipse.core.jobs</bundleDef>
-                                <bundleDef>org.eclipse.core:org.eclipse.core.runtime</bundleDef>
-                                <bundleDef>org.eclipse:org.sat4j.core</bundleDef>
-                                <bundleDef>org.eclipse:org.sat4j.pb</bundleDef>
+                                <bundleDef>org.wso2.eclipse.platform:org.eclipse.equinox.console</bundleDef>
+                                <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.command</bundleDef>
+                                <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.runtime</bundleDef>
+                                <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.shell</bundleDef>
+                                <bundleDef>org.wso2.eclipse.core:org.eclipse.core.contenttype</bundleDef>
+                                <bundleDef>org.wso2.eclipse.core:org.eclipse.core.expressions</bundleDef>
+                                <bundleDef>org.wso2.eclipse.core:org.eclipse.core.jobs</bundleDef>
+                                <bundleDef>org.wso2.eclipse.core:org.eclipse.core.runtime</bundleDef>
+                                <bundleDef>org.wso2.eclipse:org.sat4j.core</bundleDef>
+                                <bundleDef>org.wso2.eclipse:org.sat4j.pb</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.artifact.repository</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.console</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.core</bundleDef>
@@ -289,8 +295,8 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.jarprocessor</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.metadata</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.metadata.repository</bundleDef>
-                                <bundleDef>org.eclipse.equinox:org.eclipse.equinox.p2.publisher</bundleDef>
-                                <bundleDef>org.eclipse.equinox:org.eclipse.equinox.p2.touchpoint.eclipse</bundleDef>
+                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.publisher</bundleDef>
+                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.touchpoint.eclipse</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.touchpoint.natives</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.updatechecker</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.director.app</bundleDef>
@@ -299,9 +305,13 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.repository.tools</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.repository</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.updatesite</bundleDef>
-                                <bundleDef>org.eclipse.equinox:org.eclipse.equinox.p2.publisher.eclipse</bundleDef>
-                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher.gtk.linux.x86</bundleDef>
+                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.p2.publisher.eclipse</bundleDef>
+                                <bundleDef>org.wso2.bouncycastle:org.bouncycastle.bcpg</bundleDef>
+                                <bundleDef>org.wso2.tukaani:org.tukaani.xz</bundleDef>
+                                <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher.gtk.linux.x86
+                                </bundleDef>
                                 <bundleDef>org.wso2.eclipse.osgi:org.eclipse.osgi.compatibility.state</bundleDef>
+                                <bundleDef>javax.servlet:javax.servlet-api</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>

@@ -45,7 +45,7 @@
             <artifactId>org.wso2.carbon.bootstrap</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.platform</groupId>
+            <groupId>org.wso2.eclipse.platform</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
         </dependency>
     </dependencies>
