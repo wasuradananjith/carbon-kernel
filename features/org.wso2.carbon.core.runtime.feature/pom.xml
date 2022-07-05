@@ -62,6 +62,14 @@
             <artifactId>org.eclipse.equinox.util</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.equinox.ds</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.launcher</artifactId>
         </dependency>
@@ -230,8 +238,20 @@
             <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.util.promise</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.util.function</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.tukaani</groupId>
+            <artifactId>org.tukaani.xz</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
         </dependency>
     </dependencies>
 
@@ -259,6 +279,7 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.common</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.simpleconfigurator</bundleDef>
                                 <bundleDef>org.wso2.carbon:org.wso2.carbon.osgi.security</bundleDef>
+                                <bundleDef>org.eclipse.platform:org.eclipse.equinox.ds</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher</bundleDef>
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.util</bundleDef>
                                 <bundleDef>org.wso2.eclipse.osgi:org.eclipse.osgi.services</bundleDef>
@@ -280,6 +301,7 @@
                                 <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.command</bundleDef>
                                 <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.runtime</bundleDef>
                                 <bundleDef>org.wso2.apache.felix:org.apache.felix.gogo.shell</bundleDef>
+                                <bundleDef>org.wso2.apache.felix:org.apache.felix.scr</bundleDef>
                                 <bundleDef>org.wso2.eclipse.core:org.eclipse.core.contenttype</bundleDef>
                                 <bundleDef>org.wso2.eclipse.core:org.eclipse.core.expressions</bundleDef>
                                 <bundleDef>org.wso2.eclipse.core:org.eclipse.core.jobs</bundleDef>
@@ -311,7 +333,7 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher.gtk.linux.x86
                                 </bundleDef>
                                 <bundleDef>org.wso2.eclipse.osgi:org.eclipse.osgi.compatibility.state</bundleDef>
-                                <bundleDef>javax.servlet:javax.servlet-api</bundleDef>
+                                <bundleDef>jakarta.servlet:jakarta.servlet-api</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>

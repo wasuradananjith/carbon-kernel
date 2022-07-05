@@ -90,12 +90,10 @@
         <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.p2.metadata</artifactId>
-            <version>${version.equinox.p2.metadata}</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.equinox</groupId>
             <artifactId>org.eclipse.equinox.p2.engine</artifactId>
-            <version>${version.equinox.p2.engine}</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.eclipse.core</groupId>
