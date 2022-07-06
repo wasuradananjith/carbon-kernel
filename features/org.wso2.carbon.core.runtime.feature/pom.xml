@@ -238,6 +238,10 @@
             <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.wso2.bouncycastle</groupId>
+            <artifactId>org.bouncycastle.bcpg</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.util.promise</artifactId>
         </dependency>
@@ -248,10 +252,6 @@
         <dependency>
             <groupId>org.wso2.tukaani</groupId>
             <artifactId>org.tukaani.xz</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
         </dependency>
     </dependencies>
 
@@ -333,7 +333,6 @@
                                 <bundleDef>org.wso2.eclipse.equinox:org.eclipse.equinox.launcher.gtk.linux.x86
                                 </bundleDef>
                                 <bundleDef>org.wso2.eclipse.osgi:org.eclipse.osgi.compatibility.state</bundleDef>
-                                <bundleDef>jakarta.servlet:jakarta.servlet-api</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
